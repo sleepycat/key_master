@@ -1,0 +1,33 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  public_key: MyText
+  agent_forwarding: false
+  source_restriction: MyString
+  command_restriction: MyString
+  x11_forwarding: false
+  authorised_until: MyString
+  port_forwarding: false
+  environment_restriction: MyString
+  email: MyString
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  organisation: MyString
+  tty: MyString
+
+two:
+  public_key: MyText
+  agent_forwarding: false
+  source_restriction: MyString
+  command_restriction: MyString
+  x11_forwarding: false
+  authorised_until: MyString
+  port_forwarding: false
+  environment_restriction: MyString
+  email: MyString
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  organisation: MyString
+  tty: MyString

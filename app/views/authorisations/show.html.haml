@@ -1,0 +1,34 @@
+%h1= t '.title'
+%p
+  = link_to t('back'), authorisations_path
+  = link_to t('edit'), edit_authorisation_path(@authorisation)
+
+%dl
+  %dt= Authorisation.human_attribute_name :public_key
+  %dd= @authorisation.public_key
+  %dt= Authorisation.human_attribute_name :agent_forwarding
+  %dd= @authorisation.agent_forwarding
+  %dt= Authorisation.human_attribute_name :source_restriction
+  %dd= @authorisation.source_restriction
+  %dt= Authorisation.human_attribute_name :command_restriction
+  %dd= @authorisation.command_restriction
+  %dt= Authorisation.human_attribute_name :x11_forwarding
+  %dd= @authorisation.x11_forwarding
+  %dt= Authorisation.human_attribute_name :authorised_until
+  %dd= @authorisation.authorised_until
+  %dt= Authorisation.human_attribute_name :port_forwarding
+  %dd= @authorisation.port_forwarding
+  %dt= Authorisation.human_attribute_name :environment_restriction
+  %dd= @authorisation.environment_restriction
+  %dt= Authorisation.human_attribute_name :email
+  %dd= @authorisation.email
+  %dt= Authorisation.human_attribute_name :first_name
+  %dd= @authorisation.first_name
+  %dt= Authorisation.human_attribute_name :last_name
+  %dd= @authorisation.last_name
+  %dt= Authorisation.human_attribute_name :email
+  %dd= @authorisation.email
+  %dt= Authorisation.human_attribute_name :organisation
+  %dd= @authorisation.organisation
+  %dt= Authorisation.human_attribute_name :tty
+  %dd= @authorisation.tty

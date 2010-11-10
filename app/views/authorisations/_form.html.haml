@@ -1,0 +1,67 @@
+= form_for(@authorisation) do |f|
+  - if @authorisation.errors.any?
+    #errorExplanation
+      %h2= "#{pluralize(@authorisation.errors.count, 'error')} prohibited this user from being saved:"
+      %ul
+      - @authorisation.errors.full_messages.each do |msg|
+        %li= msg
+  
+  .field
+    = f.label :public_key
+    %br
+    = f.text_area :public_key
+  .field
+    = f.label :agent_forwarding
+    %br
+    = f.check_box :agent_forwarding
+  .field
+    = f.label :source_restriction
+    %br
+    = f.text_field :source_restriction
+  .field
+    = f.label :command_restriction
+    %br
+    = f.text_field :command_restriction
+  .field
+    = f.label :x11_forwarding
+    %br
+    = f.check_box :x11_forwarding
+  .field
+    = f.label :authorised_until
+    %br
+    = f.text_field :authorised_until
+  .field
+    = f.label :port_forwarding
+    %br
+    = f.check_box :port_forwarding
+  .field
+    = f.label :environment_restriction
+    %br
+    = f.text_field :environment_restriction
+  .field
+    = f.label :email
+    %br
+    = f.text_field :email
+  .field
+    = f.label :first_name
+    %br
+    = f.text_field :first_name
+  .field
+    = f.label :last_name
+    %br
+    = f.text_field :last_name
+  .field
+    = f.label :email
+    %br
+    = f.text_field :email
+  .field
+    = f.label :organisation
+    %br
+    = f.text_field :organisation
+  .field
+    = f.label :tty
+    %br
+    = f.text_field :tty
+
+  .actions
+    = f.submit
