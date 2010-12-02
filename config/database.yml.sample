@@ -14,7 +14,7 @@ development:
   database: key_master_development
   pool: 5
   username: key_master
-  password:
+  password: 
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
