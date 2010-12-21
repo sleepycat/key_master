@@ -4,39 +4,21 @@
 %table
   %thead
     %tr
-      %th= Authorisation.human_attribute_name :public_key
-      %th= Authorisation.human_attribute_name :agent_forwarding
-      %th= Authorisation.human_attribute_name :source_restriction
-      %th= Authorisation.human_attribute_name :command_restriction
-      %th= Authorisation.human_attribute_name :x11_forwarding
       %th= Authorisation.human_attribute_name :authorised_until
-      %th= Authorisation.human_attribute_name :port_forwarding
-      %th= Authorisation.human_attribute_name :environment_restriction
-      %th= Authorisation.human_attribute_name :email
       %th= Authorisation.human_attribute_name :first_name
       %th= Authorisation.human_attribute_name :last_name
       %th= Authorisation.human_attribute_name :email
       %th= Authorisation.human_attribute_name :organisation
-      %th= Authorisation.human_attribute_name :tty
       %th{:colspan => 3}= t 'actions'
   
   %tbody
     - for authorisation in @authorisations
       %tr{ :class => cycle(:odd, :even) }
-        %td= authorisation.public_key
-        %td= authorisation.agent_forwarding
-        %td= authorisation.source_restriction
-        %td= authorisation.command_restriction
-        %td= authorisation.x11_forwarding
         %td= authorisation.authorised_until
-        %td= authorisation.port_forwarding
-        %td= authorisation.environment_restriction
-        %td= authorisation.email
         %td= authorisation.first_name
         %td= authorisation.last_name
         %td= authorisation.email
         %td= authorisation.organisation
-        %td= authorisation.tty
         %td.action= link_to t('show'), authorisation
         %td.action= link_to t('edit'), edit_authorisation_path(authorisation)
-        %td.action= link_to t('destroy'), authorisation, :confirm => t('are_you_sure'), :method => :delete
+        %td.action= link_to I18n.t('destroy'), authorisation, :confirm => I18n.t('are_you_sure'), :method => :delete

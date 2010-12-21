@@ -3,3 +3,18 @@
 
 en:
   hello: "Hello world"
+  .new_authorisation: New Authorisation
+  authorisations:
+    index:
+      title: Authorised Keys
+      new_authorisation: Authorize new key
+    show:
+      title: Showing Authorisation
+    edit:
+      title: Editing Authorisation
+  actions: Actions
+  back: Back
+  edit: Edit
+  show: Show
+  destroy: Delete
+  are_you_sure: Are you sure?
