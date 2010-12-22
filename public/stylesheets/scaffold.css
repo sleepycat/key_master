@@ -11,6 +11,16 @@ body, p, ol, ul, td {
   width: 80%;
 }
 
+.public_key{
+width: 37em;
+word-wrap:break-word;
+}
+
+dt{
+font-weight:bold;
+padding: 0.5em;
+}
+
 pre {
   background-color: #eee;
   padding: 10px;

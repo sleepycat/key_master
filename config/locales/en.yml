@@ -3,15 +3,15 @@
 
 en:
   hello: "Hello world"
-  .new_authorisation: New Authorisation
+  .new_authorisation: New Authorization
   authorisations:
     index:
-      title: Authorised Keys
+      title: Authorized Keys
       new_authorisation: Authorize new key
     show:
-      title: Showing Authorisation
+      title: Showing Authorization
     edit:
-      title: Editing Authorisation
+      title: Editing Authorization
   actions: Actions
   back: Back
   edit: Edit

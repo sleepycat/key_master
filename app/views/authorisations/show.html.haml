@@ -5,7 +5,7 @@
 
 %dl
   %dt= Authorisation.human_attribute_name :public_key
-  %dd= @authorisation.public_key
+  %dd{:class => "public_key"}= @authorisation.public_key
   %dt= Authorisation.human_attribute_name :agent_forwarding
   %dd= @authorisation.agent_forwarding
   %dt= Authorisation.human_attribute_name :source_restriction
