@@ -87,7 +87,6 @@ DEPENDENCIES
   delayed_job
   devise
   haml
-  kgio
   pg
   rails (= 3.0.3)
   unicorn

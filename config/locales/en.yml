@@ -12,9 +12,14 @@ en:
       title: Showing Authorization
     edit:
       title: Editing Authorization
+    new:
+      title: New Authorization
   actions: Actions
   back: Back
   edit: Edit
   show: Show
   destroy: Delete
   are_you_sure: Are you sure?
+  nav:
+    sign_in: Sign In
+    sign_out: Sign Out

@@ -7,5 +7,15 @@
     = csrf_meta_tag
   %body
     #content
+
+      #nav
+        %li
+          =link_to t('nav.sign_out'), destroy_user_session_path if anybody_signed_in?
+          =link_to t('nav.sign_in'), new_user_session_path unless anybody_signed_in?
+      #flash
+      - unless flash.empty?
+        = content_tag :div, flash[:notice],  :class => "notice"  if flash[:notice]
+        = content_tag :div, flash[:warning], :class => "warning" if flash[:warning]
+        = content_tag :div, flash[:error],   :class => "error"   if flash[:error]
       = yield
 
