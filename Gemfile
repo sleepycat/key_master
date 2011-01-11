@@ -7,7 +7,7 @@ gem 'rails', '3.0.3'
 
 gem 'pg'
 gem 'haml'
-gem 'unicorn'
+gem 'unicorn', '2.0.0'
 gem 'devise'
 gem 'delayed_job'
 
